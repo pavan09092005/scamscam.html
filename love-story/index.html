@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H B D nimmiii gaaruu❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main id="stage">
+
+    <!-- PAGE 1: ARROW INTRO -->
+    <section id="scene-intro" class="scene is-active" aria-label="Intro">
+      <p class="intro-line" id="intro-line"></p>
+
+      <svg id="heart-target" viewBox="0 0 100 100" aria-hidden="true">
+        <defs>
+          <linearGradient id="heart-gradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" style="stop-color: var(--heart-blue-top)" />
+            <stop offset="100%" style="stop-color: var(--heart-blue-deep)" />
+          </linearGradient>
+          <filter id="heart-blur" x="-60%" y="-60%" width="270%" height="270%">
+            <feGaussianBlur stdDeviation="5" />
+          </filter>
+        </defs>
+
+        <path class="heart-path heart-glow"
+          d="M50 86 C24 64 10 47 10 31 C10 18 20 9 32 9 C41 9 48 14 50 22 C52 14 59 9 68 9 C80 9 90 18 90 31 C90 47 76 64 50 86 Z" />
+
+        <path class="heart-path"
+          d="M50 86 C24 64 10 47 10 31 C10 18 20 9 32 9 C41 9 48 14 50 22 C52 14 59 9 68 9 C80 9 90 18 90 31 C90 47 76 64 50 86 Z" />
+      </svg>
+
+      <div class="bow-rig" aria-hidden="true">
+        <svg id="bow" viewBox="0 0 300 240">
+          <defs>
+            <linearGradient id="bow-gold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fff1b8"/>
+              <stop offset="35%" stop-color="#d99a36"/>
+              <stop offset="68%" stop-color="#9b5b20"/>
+              <stop offset="100%" stop-color="#ffe7a0"/>
+            </linearGradient>
+            <linearGradient id="arrow-metal" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#fff8db"/>
+              <stop offset="50%" stop-color="#c7d5e5"/>
+              <stop offset="100%" stop-color="#71849b"/>
+            </linearGradient>
+          </defs>
+          <path class="bow-limb-shadow" d="M96 14 C48 40 30 76 36 116 C42 156 60 198 92 224"/>
+          <path class="bow-limb" d="M96 14 C48 40 30 76 36 116 C42 156 60 198 92 224"/>
+          <path class="bow-highlight" d="M91 20 C51 46 38 79 43 115 C48 151 65 190 88 216"/>
+          <path class="bow-grip" d="M37 104 C35 112 35 122 37 130"/>
+          <path class="bow-grip-detail" d="M31 108 Q38 116 32 126 M42 108 Q35 116 42 126"/>
+          <path id="bowstring" d="M96 14 L94 119 L92 224" />
+        </svg>
+
+        <svg id="arrow" viewBox="0 0 300 240">
+          <defs>
+            <linearGradient id="shaft-gradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#fff0bd"/>
+              <stop offset="50%" stop-color="#b87932"/>
+              <stop offset="100%" stop-color="#70421f"/>
+            </linearGradient>
+          </defs>
+          <g id="arrow-group">
+            <line class="arrow-shaft-shadow" x1="94" y1="119" x2="250" y2="119"/>
+            <line class="arrow-shaft" x1="94" y1="119" x2="250" y2="119" />
+            <path class="arrow-head" d="M248 108 L278 119 L248 130 L255 119 Z" />
+            <path class="arrow-head-detail" d="M250 112 L269 119 L250 126 Z"/>
+            <path class="arrow-fletch" d="M99 119 Q83 99 76 103 Q83 116 94 119 Q83 122 76 135 Q88 139 99 119 Z" />
+            <path class="arrow-fletch-inner" d="M96 119 L80 105 M96 119 L80 133"/>
+            <circle class="arrow-nock" cx="94" cy="119" r="3.2" />
+            <circle id="arrow-hit" cx="120" cy="119" r="55" />
+          </g>
+        </svg>
+      </div>
+
+      <p class="pull-hint label" id="pull-hint"></p>
+    </section>
+
+    <!-- PAGE 2: BIRTHDAY CARD -->
+    <section id="scene-card" class="scene" aria-label="Birthday card">
+      <div class="letterbox letterbox-top"></div>
+      <div class="letterbox letterbox-bottom"></div>
+
+      <div class="card-content">
+        <p class="wish-line reveal-item" id="wish-line"></p>
+        <h1 class="card-title reveal-item" id="card-title"></h1>
+        <p class="card-name reveal-item" id="card-name"></p>
+
+        <svg class="title-underline reveal-item"
+          id="title-underline" viewBox="0 0 260 26" aria-hidden="true">
+          <path d="M6 15 C52 22 102 6 152 11 C194 15 228 12 254 4" />
+        </svg>
+
+        <p class="card-subtitle reveal-item" id="card-subtitle"></p>
+        <p class="card-for reveal-item" id="card-for"></p>
+      </div>
+
+      <p class="tap-hint label" id="tap-hint">tap to continue</p>
+    </section>
+
+    <!-- PAGE 3: HEART TREE -->
+    <section id="scene-tree" class="scene" aria-label="Blooming tree">
+      <div class="petal-field" id="petal-field"></div>
+
+      <svg id="tree-svg" viewBox="0 0 400 420" aria-hidden="true">
+        <path id="trunk-path" class="tree-stroke"
+          d="M200 392 C195 356 207 322 198 286 C191 256 203 228 196 200 C191 178 199 158 195 138 C193 126 196 116 194 106" />
+
+        <g id="tree-branches">
+          <path class="tree-stroke branch" d="M197 232 C178 220 160 212 145 197 C133 185 126 174 117 162" />
+          <path class="tree-stroke branch" d="M198 240 C219 230 240 222 255 206 C267 193 274 180 284 167" />
+          <path class="tree-stroke branch" d="M196 176 C183 163 171 155 161 141 C153 129 149 119 143 108" />
+          <path class="tree-stroke branch" d="M195 172 C208 157 222 149 233 134 C241 123 247 111 254 99" />
+          <path class="tree-stroke branch" d="M194 136 C193 121 197 108 193 94 C190 83 194 72 191 61" />
+          <path class="tree-stroke branch" d="M147 199 C136 193 128 186 118 181 C110 177 104 171 97 166" />
+          <path class="tree-stroke branch" d="M256 208 C267 201 276 193 287 188 C295 184 301 177 309 173" />
+        </g>
+
+        <g id="canopy"></g>
+      </svg>
+
+      <p class="signature-line" id="signature-line"></p>
+
+      <div class="finale" id="finale">
+        <p class="finale-title" id="finale-title"></p>
+        <p class="finale-subtitle" id="finale-subtitle"></p>
+        <p class="finale-signoff" id="finale-signoff"></p>
+      </div>
+
+      <button class="replay-btn label" id="replay-btn" type="button">
+        ↻ replay
+      </button>
+
+      <button id="tree-next-btn" class="next-btn" type="button">
+        Continue our memories ♥
+      </button>
+    </section>
+
+    <!-- PAGE 4: MEMORY VIDEO -->
+    <section id="scene-memory" class="scene extra-scene">
+      <div class="page-content">
+        <p class="eyebrow">............</p>
+        <h1>A BIRTHDAY SONG FOR U</h1>
+
+        <p class="page-description">
+         ENJOY THE UPCOMING DAYS...
+        </p>
+
+        <div class="video-frame">
+          <video id="memory-video" playsinline controls preload="metadata">
+            <source src="memory.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <p class="video-caption">
+        GO A HEAD ♥
+        </p>
+
+        <button id="memory-next-btn" class="next-btn" type="button" hidden>
+          CLICK...
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 5: BIRTHDAY CAKE -->
+    <section id="scene-cake" class="scene extra-scene">
+      <div class="page-content cake-content">
+        <p class="eyebrow">REAL cake kadhu kani..still</p>
+        <h1>BLOW THE CANDLES</h1>
+
+        <p class="page-description">
+         TAP ON THE CANDLES...COMPLETING 15 YEARS 
+        </p>
+
+        <div class="cake-area">
+          <div class="cake">
+            <div class="candles" id="candles"></div>
+            <div class="cake-tier tier-top"></div>
+            <div class="cake-tier tier-middle"></div>
+            <div class="cake-tier tier-bottom"></div>
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+
+        <p id="candle-count" class="candle-count">16 candles remaining</p>
+        <p id="cake-message" class="cake-message">
+          Make your beautiful wish ♥
+        </p>
+      </div>
+    </section>
+
+    <!-- PAGE 6: CELEBRATION -->
+    <section id="scene-celebration" class="scene extra-scene">
+      <div class="fireworks" id="fireworks"></div>
+
+      <div class="page-content celebration-content">
+        <p class="eyebrow">The wish has been made!</p>
+        <h1>Happy Birthday!</h1>
+
+        <p class="page-description">
+          May your life always sparkle with happiness and love.
+        </p>
+
+        <div class="video-frame celebration-frame">
+          <video id="celebration-video" playsinline controls preload="metadata">
+            <source src="celebration.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <p class="video-caption">
+          This celebration is all for you! ✨
+        </p>
+
+        <button id="gift-next-btn" class="next-btn" type="button" hidden>
+          Collect your gift 🎁
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 7: GIFT -->
+    <section id="scene-gift" class="scene extra-scene">
+      <div class="page-content gift-content">
+        <p class="eyebrow">Something special awaits</p>
+        <h1>A Little Gift For You</h1>
+
+        <p class="page-description">
+          Tap the gift box three times to open your surprise.
+        </p>
+
+        <button id="gift-box" class="gift-box" type="button"
+          aria-label="Tap to open your gift">
+          <span class="gift-lid"></span>
+          <span class="gift-body"></span>
+          <span class="gift-ribbon-vertical"></span>
+          <span class="gift-ribbon-horizontal"></span>
+          <span class="gift-bow">♡</span>
+        </button>
+
+        <p id="gift-count" class="gift-count">
+          3 little taps to go ♥
+        </p>
+
+        <button id="letter-open-btn" class="next-btn" type="button" hidden>
+          Open your letter 💌
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 8: LOVE LETTER -->
+    <section id="scene-letter" class="scene extra-scene">
+      <div class="page-content letter-content">
+        <p class="eyebrow">??????????</p>
+        <h1>A Letter For You</h1>
+
+        <button id="letter-envelope" class="letter-envelope" type="button">
+          <span class="envelope-heart">♥</span>
+          <span>Tap to open</span>
+        </button>
+
+        <article id="love-letter" class="love-letter" hidden>
+          <h2>My Dearest Sheranya,</h2>
+
+          <p>
+           DONT KNOW WHAT TO SAY...EM CHEPPINA NIKU NA MIDHA KOPAME OSTUNDI...
+          </p>
+
+          <p>
+           CHAALA CHEPPALI ANI UNDI kani em cheppalo emo... ANY WAY TAKE YOUR TIME ENJOY WITH YOUR FRNDS DO WHAT EVER U WANT ... I WILL WAIT !!!!
+          </p>
+
+          <p>
+            Thank you for being you. You are precious to me, today and always.
+          </p>
+
+          <p class="letter-signature">
+            With all my love,<br />
+            Pavan ♥
+          </p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgm" src="bgm.mp3" loop preload="auto"></audio>
+
+  <button id="bgm-toggle" type="button" aria-label="mute music">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <g class="icon-sound">
+        <path class="body" d="M11 5 L6 9 H2 v6 h4 l5 4 Z" />
+        <path class="wave" d="M15.5 8.5a5 5 0 0 1 0 7" />
+        <path class="wave wave2" d="M18.5 5.5a9 9 0 0 1 0 13" />
+      </g>
+
+      <g class="icon-muted">
+        <path class="body" d="M11 5 L6 9 H2 v6 h4 l5 4 Z" />
+        <line x1="16" y1="9" x2="22" y2="15" />
+        <line x1="22" y1="9" x2="16" y2="15" />
+      </g>
+    </svg>
+  </button>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

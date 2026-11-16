@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff1f5">
+  <meta name="description" content="A little apology made with love for Nimmiii.">
+  <title>HELLO ANDI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<main class="app">
+  <span class="heart h1" aria-hidden="true">♥</span>
+  <span class="heart h2" aria-hidden="true">♡</span>
+  <span class="heart h3" aria-hidden="true">♥</span>
+
+  <section class="card" aria-label="A little apology for Nimmiii">
+
+    <div class="progress" aria-label="Page progress">
+      <div class="dots">
+        <i class="active"></i><i></i><i></i>
+        <i></i><i></i><i></i>
+      </div>
+      <span id="stepLabel">01 / 06</span>
+    </div>
+
+    <!-- SLIDE 1 -->
+    <section class="slide active" data-slide="0">
+      <figure class="sticker">
+        <img src="assets/nimmiii-pleading-bunny.png"
+             alt="A little bunny asking for forgiveness">
+      </figure>
+
+      <div class="copy">
+        <p class="eyebrow">A little note HERE</p>
+        <h1>I DONT KNOW WHAT TO SAY<br><em>Nimmiii</em></h1>
+        <p class="message">
+          But I am ready to make it right. Will you hear me out?
+        </p>
+      </div>
+
+      <button class="primary" data-next="1">
+        LISTEN  <span aria-hidden="true">→</span>
+      </button>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section class="slide" data-slide="1">
+      <figure class="sticker">
+        <img src="assets/nimmiii-sorry-bunny.png"
+             alt="A sad bunny saying sorry">
+      </figure>
+
+      <div class="copy">
+        <p class="eyebrow">INTENTIONALLY OR NOT</p>
+        <h1>I Know<br>I Hurt You</h1>
+        <p class="message">
+          I messed up… and I am truly sorry for that.
+        </p>
+      </div>
+
+      <div class="row">
+        <button class="secondary" data-back="0">← Back</button>
+        <button class="primary" data-next="2">Next →</button>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section class="slide" data-slide="2">
+      <figure class="sticker couple">
+        <img src="assets/nimmiii-hug-bunnies.png"
+             alt="Two little bunnies hugging">
+      </figure>
+
+      <div class="copy">
+        <p class="eyebrow">The truth is simple
+          WHAT I WANT TO SAY IS 
+        </p>
+        <h1>I CANT DO IT <br>WITHOUT UU</h1>
+        <p class="message">
+          GIVE ME A CHANCE , I NEVER REPEAT IT ...
+        </p>
+      </div>
+
+      <div class="row">
+        <button class="secondary" data-back="1">← Back</button>
+        <button class="primary" data-next="3">Next →</button>
+      </div>
+    </section>
+
+    <!-- SLIDE 4 -->
+    <section class="slide" data-slide="3">
+      <figure class="sticker">
+        <img src="assets/nimmiii-bunny-heart.png"
+             alt="A bunny holding a heart">
+      </figure>
+
+      <div class="copy">
+        <p class="eyebrow">With all my heart</p>
+        <h1>I'm Truly<br>Sorry</h1>
+        <p class="message">
+          Please forgive me… You mean so much to me.
+        </p>
+      </div>
+
+      <div class="row">
+        <button class="secondary" data-back="2">← Back</button>
+        <button class="primary" data-next="4">Next →</button>
+      </div>
+    </section>
+
+    <!-- SLIDE 5 -->
+    <section class="slide meter" data-slide="4">
+      <div class="meter-heading">
+        <p class="eyebrow">One last little thing</p>
+        <h1 class="meter-title">I KNOW U DONT FORGIVE ME <br>BUT STILL GO A HEAD</h1>
+      </div>
+
+      <figure class="sticker">
+        <img id="meterArt"
+             src="assets/nimmiii-pleading-bunny.png"
+             alt="A bunny waiting hopefully">
+      </figure>
+
+      <div class="meter-copy">
+        <div class="bar"
+             id="progressBar"
+             role="progressbar"
+             aria-label="Forgiveness meter"
+             aria-valuemin="0"
+             aria-valuemax="100"
+             aria-valuenow="0">
+          <div id="fill"></div>
+        </div>
+
+        <strong id="percent">0% FORGIVEN</strong>
+        <p id="hint" aria-live="polite">Tap the heart to heal my heart</p>
+      </div>
+
+      <button id="heal" class="heal"
+              aria-label="Add love to the forgiveness meter">
+        ♥
+      </button>
+
+      <div id="forgiven" class="forgiven" hidden>
+        <strong>You're forgiven! ♥</strong>
+        <p>haha.. it is just for my self happiness</p>
+        <button id="secret" class="primary">
+          go a HEAD andiii →
+        </button>
+      </div>
+
+      <button class="secondary" data-back="3">← Back</button>
+    </section>
+
+    <!-- SLIDE 6 -->
+    <section class="slide secret" data-slide="5">
+      <figure class="photo">
+        <img src="assets/nimmi pic.jpeg" alt="A photo of Nimmiii">
+      </figure>
+
+      <div class="copy">
+        <p class="eyebrow">edo chinna surprise</p>
+        <h1>password<br>baga alochinchi kottandi</h1>
+        <p class="secret-note">
+          hint : its a date...{**/**/20**}
+        </p>
+      </div>
+
+      <form id="pinForm" class="pin-form">
+        <div class="pin" aria-label="Enter your eight-digit code">
+          <input aria-label="Digit 1" inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="off" required>
+          <input aria-label="Digit 2" inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="off" required>
+          <input aria-label="Digit 3" inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="off" required>
+          <input aria-label="Digit 4" inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="off" required>
+          <input aria-label="Digit 5" inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="off" required>
+          <input aria-label="Digit 6" inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="off" required>
+          <input aria-label="Digit 7" inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="off" required>
+          <input aria-label="Digit 8" inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="off" required>
+        </div>
+
+        <p id="passwordMessage"
+           class="password-message"
+           role="status"
+           aria-live="polite"></p>
+      </form>
+
+      <div id="unlocked" class="unlocked" hidden>
+        <strong>UNLOCKED </strong>
+        <p>go a head Nimmiii gaaruuu♡</p>
+       <button id="continue" class="primary" type="button">
+     continueeeee....
+    </button>
+
+    <p id="transitionMessage" hidden>
+     may be this first birthday..naku thelisina tarvatha...❤️
+    </p>
+      </div>
+
+      <button class="secondary" data-back="4">← Back</button>
+    </section>
+
+  </section>
+</main>
+</body>
+</html>
